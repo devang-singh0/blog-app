@@ -5,10 +5,10 @@ import authenticationMiddleware from "./middlewares/authentication.js";
 import cookieParser from "cookie-parser";
 import { router as blogRouter } from "./routes/blog.js";
 import { Blog } from "./models/blog.js";
-mongoose.connect('mongodb://localhost:27017/blogify').then(()=>{console.log('db connected')})
+mongoose.connect(process.env.MONGO_URL).then(()=>{console.log('db connected')})
 let app = express();
 
-let PORT = 8000;
+let PORT = process.env.PORT || 8000;
 
 app.set('view engine', 'ejs');
 app.use(express.urlencoded({extended: true}));
