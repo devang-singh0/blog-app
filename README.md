@@ -1,1 +1,1 @@
-## <span style="color:red">⚠️ This project is currently in development and may not be fully functional. Please be aware that features are still being implemented and the project may undergo significant changes.</span>
+## <span style="color:red">⚠️ This project is currently in development and not fully functional. Please be aware that features are still being implemented and the project may undergo significant changes.</span>
